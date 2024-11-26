@@ -1,5 +1,9 @@
+---
+const { title } = Astro.props;
+---
+
 <div class="card">
-    <h1 class="title__card">Titulo</h1>
+    <h1 class="title__card">{title}</h1>
     <p class="card__description">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, quisquam
         unde! Illum?
@@ -13,5 +17,6 @@
         border: 2px solid black;
         border-radius: 5px;
         padding: 5px 10px;
+        margin-bottom: 10px;
     }
 </style>
