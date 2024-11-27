@@ -1,11 +1,15 @@
 ---
-const { title, body } = Astro.props;
+interface Props {
+    title?: String;
+    content?: String;
+}
+const { title = "Default title", content = "Default content" } = Astro.props;
 ---
 
 <div class="card">
     <h1 class="title__card">{title}</h1>
     <p class="card__description">
-        {body}
+        {content}
     </p>
 </div>
 
