@@ -1,8 +1,9 @@
 ---
 interface Props {
     pageTitle?: String;
+    description?: String;
 }
-const { pageTitle = "" } = Astro.props;
+const { pageTitle = "", description = "" } = Astro.props;
 ---
 
 <!doctype html>
